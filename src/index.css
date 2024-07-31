@@ -120,7 +120,7 @@ footer button:hover {
 }
 
 .sidebarContents h2 {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1.4rem;
 }
 
@@ -142,6 +142,42 @@ footer button:hover {
 .sidebarContents button:hover {
   opacity: 0.7;
 
+}
+
+.loadingState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.loadingState i {
+  opacity: 0.2;
+  font-size: 3rem;
+  animation: spin 2.5s linear infinite;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.descriptionTitle {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.descriptionContent {
+  font-weight: 200;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (min-width: 640px) {
